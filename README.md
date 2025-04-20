@@ -30,11 +30,16 @@ This architecture combines the simplicity of component-based UIs with the discip
 
 ## 🧱 Typical Folder Structure
 
-/src 
-├── Models/ # (M) DTOs, state containers, structured data 
-├── Interfaces/ # Interfaces for services (for DI/mocking) 
+/src
+
+├── Models/ # (M) DTOs, state containers, structured data
+
+├── Interfaces/ # Interfaces for services (for DI/mocking)
+
 ├── Services/ # (S) Application and business logic
+
 ├── Pages/ # (P) UI views (.razor, .xaml, .cshtml, etc.)
+
   └── Home.razor # Visual layout only 
   └── Home.razor.cs # (C) Code-behind: event handlers, service calls
 
