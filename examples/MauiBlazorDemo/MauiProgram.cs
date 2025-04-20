@@ -1,4 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
+using MauiBlazorDemo.Interfaces;   
+using MauiBlazorDemo.Services;     
 
 namespace MauiBlazorDemo
 {
@@ -7,6 +9,7 @@ namespace MauiBlazorDemo
         public static MauiApp CreateMauiApp()
         {
             var builder = MauiApp.CreateBuilder();
+
             builder
                 .UseMauiApp<App>()
                 .ConfigureFonts(fonts =>
@@ -16,9 +19,12 @@ namespace MauiBlazorDemo
 
             builder.Services.AddMauiBlazorWebView();
 
+            // Add Serwis register for SCPM
+            builder.Services.AddSingleton<ICounterService, CounterService>();
+
 #if DEBUG
-    		builder.Services.AddBlazorWebViewDeveloperTools();
-    		builder.Logging.AddDebug();
+            builder.Services.AddBlazorWebViewDeveloperTools();
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build();
