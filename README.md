@@ -40,7 +40,8 @@ This architecture combines the simplicity of component-based UIs with the discip
 
 ├── Pages/ # (P) UI views (.razor, .xaml, .cshtml, etc.)
 
-  └── Home.razor # Visual layout only 
+  └── Home.razor # Visual layout only
+  
   └── Home.razor.cs # (C) Code-behind: event handlers, service calls
 
   ---
