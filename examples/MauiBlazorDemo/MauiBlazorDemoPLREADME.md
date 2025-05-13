@@ -12,7 +12,7 @@ Ka¿da warstwa odpowiada za konkretna czesc logiki i struktury aplikacji:
 
 - **Service** (`/Services/CounterService.cs`) – zawiera logikê aplikacji (np. zwiekszanie i resetowanie licznika)
 - **Code-Behind** (`/Components/Pages/Home.razor.cs`) – logika strony: obsluga zdarzen, wstrzykiwanie serwisow (DI)
-- **Page** (`/Components/Pages/Home.razor`) – interfejs u¿ytkownika (UI): markup, bindingi, przyciski
+- **Page** (`/Components/Pages/Home.razor`) – interfejs uzytkownika (UI): markup, bindingi, przyciski
 - **Model** (`/Models/CounterState.cs`) – reprezentacja stanu (np. wartoœæ licznika)
 
 Struktura folderów:
